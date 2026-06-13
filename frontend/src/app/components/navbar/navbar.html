@@ -1,0 +1,40 @@
+<!-- <p>navbar works!</p> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand fw-bold" routerLink="/dashboard">BookStore</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/books" routerLinkActive="active">Books</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" routerLink="/blogs" routerLinkActive="active">Blogs</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" routerLink="/cart" routerLinkActive="active">Cart</a>
+            </li>
+        </ul>
+
+
+        <ul class="navbar-nav ms-auto align-items-center gap-3">
+            <li class="nav-item me-3">
+                <span class="text-white">Hello, {{getUsername()}}</span>
+            </li>
+
+            <!-- admin badge -->
+             <li class="nav-item" *ngIf="auth.isAdmin()">
+                <span class="badge bg-warning text-dark">ADMIN</span>
+             </li>
+
+             <li class="nav-item">
+                <button class="btn btn-outline-light btn-sm" (click)="logout()">Logout</button>
+            </li>
+        </ul>
+
+    </div>
+</nav>

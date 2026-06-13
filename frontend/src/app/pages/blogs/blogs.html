@@ -1,0 +1,58 @@
+<!-- <p>blogs works!</p> -->
+<app-navbar></app-navbar>
+
+<div class="container mt-4">
+ 
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="fw-bold">📝 Blogs</h3>
+    <button class="btn btn-primary" (click)="toggleForm()">
+      {{ showForm ? 'Cancel' : '+ Write a Blog' }}
+    </button>
+  </div>
+
+   <!-- Success/Error -->
+  <div *ngIf="successMsg" class="alert alert-success">{{ successMsg }}</div>
+  <div *ngIf="errorMsg" class="alert alert-danger">{{ errorMsg }}</div>
+
+   <!-- Blog Form -->
+  <div class="card p-4 mb-4 shadow-sm" *ngIf="showForm">
+    <h5>{{ isEditing ? 'Edit Blog' : 'New Blog' }}</h5>
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input type="text" class="form-control"
+        [(ngModel)]="newBlog.title" placeholder="Enter blog title"/>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Content</label>
+      <textarea class="form-control" rows="6"
+        [(ngModel)]="newBlog.content"
+        placeholder="Write your blog content here...">
+      </textarea>
+    </div>
+    <button class="btn btn-success" (click)="submitBlog()">
+      {{ isEditing ? 'Update Blog' : 'Post Blog' }}
+    </button>
+  </div>
+ 
+  <!-- Blog List -->
+  <div *ngIf="blogs.length === 0 && !errorMsg" class="text-center mt-5">
+    <h5 class="text-muted">No blogs yet. Be the first to write one!</h5>
+  </div>
+ 
+  <div class="card mb-4 p-4 shadow-sm" *ngFor="let blog of blogs">
+    <div class="d-flex justify-content-between align-items-start">
+      <div>
+        <h5 class="fw-bold">{{ blog.title }}</h5>
+        <small class="text-muted">By User #{{ blog.user_id }}</small>
+      </div>
+      <div *ngIf="canEditOrDelete(blog)" class="d-flex gap-2">
+        <button class="btn btn-outline-primary btn-sm"
+          (click)="editBlog(blog)">Edit</button>
+        <button class="btn btn-outline-danger btn-sm"
+          (click)="deleteBlog(blog.blog_id)">Delete</button>
+      </div>
+    </div>
+    <p class="mt-3 mb-0">{{ blog.content }}</p>
+  </div>
+ 
+</div>

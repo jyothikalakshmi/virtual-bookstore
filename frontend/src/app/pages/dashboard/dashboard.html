@@ -1,0 +1,112 @@
+<!-- <p>dashboard works!</p> -->
+<app-navbar></app-navbar>
+ 
+<div class="min-vh-100" style="background: linear-gradient(135deg, #f5f7fa, #c3cfe2);">
+ 
+  <!-- Welcome Hero -->
+  <div class="text-center py-5">
+    <h1 class="fw-bold display-5 mt-3">
+      Welcome back, <span style="color:#0f3460;">{{ username }}</span>! 👋
+    </h1>
+    <p class="text-muted fs-5 mt-2">
+      What would you like to do today?
+    </p>
+    <div *ngIf="isAdmin" class="mt-2">
+      <span class="badge bg-warning text-dark fs-6 px-3 py-2">
+        🛡️ Admin Access
+      </span>
+    </div>
+  </div>
+ 
+  <!-- Feature Cards -->
+  <div class="container pb-5">
+    <div class="row g-4 justify-content-center">
+ 
+      <!-- Books Card -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 border-0 text-center p-4"
+          style="cursor:pointer; transition: transform 0.2s;"
+          (click)="goToBooks()"
+          onmouseover="this.style.transform='translateY(-5px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <div class="fs-1 mb-3">📚</div>
+          <h4 class="fw-bold">Browse Books</h4>
+          <p class="text-muted">
+            Explore our entire collection. Search, filter and sort
+            by category, author or price.
+          </p>
+          <button class="btn btn-primary mt-auto">
+            Go to Books
+          </button>
+        </div>
+      </div>
+ 
+      <!-- Cart Card -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 border-0 text-center p-4"
+          style="cursor:pointer; transition: transform 0.2s;"
+          (click)="goToCart()"
+          onmouseover="this.style.transform='translateY(-5px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <div class="fs-1 mb-3">🛒</div>
+          <h4 class="fw-bold">Your Cart</h4>
+          <p class="text-muted">
+            View items in your cart and place your order
+            quickly and easily.
+          </p>
+          <button class="btn btn-success mt-auto">
+            Go to Cart
+          </button>
+        </div>
+      </div>
+ 
+      <!-- Blogs Card -->
+      <div class="col-md-4">
+        <div class="card shadow h-100 border-0 text-center p-4"
+          style="cursor:pointer; transition: transform 0.2s;"
+          (click)="goToBlogs()"
+          onmouseover="this.style.transform='translateY(-5px)'"
+          onmouseout="this.style.transform='translateY(0)'">
+          <div class="fs-1 mb-3">✍️</div>
+          <h4 class="fw-bold">Blogs</h4>
+          <p class="text-muted">
+            Read blogs from fellow readers or share
+            your own thoughts and book reviews.
+          </p>
+          <button class="btn btn-warning mt-auto">
+            Go to Blogs
+          </button>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <!-- Admin Section
+    <div *ngIf="isAdmin" class="mt-5">
+      <h5 class="text-center fw-bold mb-4 text-muted">Admin Quick Actions</h5>
+      <div class="row g-3 justify-content-center">
+        <div class="col-md-4">
+          <div class="card border-warning p-3 text-center shadow-sm">
+            <div class="fs-2 mb-2">➕</div>
+            <h6 class="fw-bold">Add New Book</h6>
+            <p class="text-muted small">Go to Books page to add new books to the store.</p>
+            <button class="btn btn-warning btn-sm" (click)="goToBooks()">
+              Go to Books
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-warning p-3 text-center shadow-sm">
+            <div class="fs-2 mb-2">📝</div>
+            <h6 class="fw-bold">Manage Blogs</h6>
+            <p class="text-muted small">Create, edit or delete blogs from the blogs page.</p>
+            <button class="btn btn-warning btn-sm" (click)="goToBlogs()">
+              Go to Blogs
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+</div> -->

@@ -1,0 +1,36 @@
+<!-- <p>register works!</p> -->
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow p-4" style="width:400px;">
+        <h3 class="text-center mb-4">Create Account</h3>
+        <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+        <div *ngIf="success" class="alert alert-success">{{success}}</div>
+
+        <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" [(ngModel)]="user.uname" placeholder="Enter your name"/>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" [(ngModel)]="user.email" placeholder="Enter email"/>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" [(ngModel)]="user.password" placeholder="Enter password"/>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input type="text" class="form-control" [(ngModel)]="user.phno" placeholder="Enter phone number"/>
+        </div>
+
+        <button class="btn btn-primary w-100" (click)="register()">Register</button>
+
+        <p class="text-center mt-3">
+            Already have an account? <a routerLink="/login">Login here</a>
+        </p>
+
+    </div>
+</div>

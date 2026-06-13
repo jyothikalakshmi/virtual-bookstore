@@ -1,0 +1,78 @@
+<!-- <p>book-detail works!</p> -->
+<app-navbar></app-navbar>
+
+<div class="container mt-4" *ngIf="book">
+
+
+
+    <!-- book info -->
+     <div class="row">
+        <div class="col-md-8">
+            <h2 class="fw-bold">{{book.bname}}</h2>
+            <p class="text-muted fs-5">by {{book.author}}</p>
+            <span class="badge bg-secondary mb-2">{{book.category}}</span>
+            <p class="mt-2">{{book.description}}</p>
+            <h4 class="text-success fw-bold">Rs{{book.price}}</h4>
+            <p class="text-muted">Stock available:{{book.stock}}</p>
+
+            <div *ngIf="cartMsg!== ''" class="alert mt-2" [class.alert-success]="cartMsg.includes('success')" 
+                                           [class.alert-danger]="!cartMsg.includes('success')">
+                                           {{cartMsg}}
+                 </div>
+                                                 
+            <button class="btn btn-primary mt-2" (click)="addToCart()" >Add to cart</button>
+
+        </div>
+     </div>
+
+     <hr class="mt-4"/>
+
+     <!-- reviews section  -->
+      <h4 class="mt-3">Customer Reviews</h4>
+      <div *ngIf="reviews.length===0" class="text-muted mb-3">
+        No reviews yet for this book.
+      </div>
+
+      <div class="card mb-3 p-3" *ngFor="let review of reviews">
+        <div class="d-flex justify-content-between">
+            <span class="fw-bold">{{review.name || 'User'}}</span>
+            <span>{{getStars(review.rating)}}</span>
+        </div>
+        <p class="mb-0 mt-1 text-muted">{{review.review_text}}</p>
+      </div>
+
+      <!-- add review -->
+       <div class="card p-4 mt-3 mb-5 shadow-sm">
+    <h5>Write a Review</h5>
+    <p class="text-muted small">Note: Only users who purchased this book can review.</p>
+ 
+    <div *ngIf="reviewSuccess!==''" class="alert alert-success">{{ reviewSuccess }}</div>
+    <div *ngIf="reviewError!==''" class="alert alert-danger">{{ reviewError }}</div>
+ 
+    <div class="mb-3">
+      <label class="form-label">Rating</label>
+      <select class="form-select" [(ngModel)]="newReview.rating">
+        <option [value]="5">⭐⭐⭐⭐⭐ - Excellent</option>
+        <option [value]="4">⭐⭐⭐⭐ - Good</option>
+        <option [value]="3">⭐⭐⭐ -Average</option>
+        <option [value]="2">⭐⭐ -Poor</option>
+        <option [value]="1">⭐ -Terrible</option>
+      </select>
+    </div>
+ 
+    <div class="mb-3">
+      <label class="form-label">Your Review</label>
+      <textarea class="form-control" rows="3"
+        [(ngModel)]="newReview.review_text"
+        placeholder="Write your review here...">
+      </textarea>
+    </div>
+ 
+    <button class="btn btn-success" (click)="submitReview()">Submit Review</button>
+  </div>
+ 
+</div>
+ 
+<!-- <div class="container mt-5 text-center" *ngIf="!book">
+  <p class="text-muted">Loading book details...</p>
+</div> -->
