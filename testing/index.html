@@ -1,0 +1,2603 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-BookStore_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">BookStore Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-BookStore_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\2485187\Downloads\book_store (1)(java21)\book_store\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-BookStore_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-BookStore_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-BookStore_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-BookStore_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-BookStore_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-BookStore_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">82 methods, 5 failed,   77 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BookStore_Test_Suite" class="hide-methods failed suite-BookStore_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-BookStore_Test_Suite -->
+                      <a href="#" panel-name="suite-BookStore_Test_Suite" class="show-methods failed suite-BookStore_Test_Suite"> (show)</a> <!-- show-methods failed suite-BookStore_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-BookStore_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BlogApiTest" class="method navigator-link" hash-for-method="testGetBlogByInvalidId">testGetBlogByInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.OrderApiTest" class="method navigator-link" hash-for-method="testGetOrderDetailsInvalidId">testGetOrderDetailsInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.OrderApiTest" class="method navigator-link" hash-for-method="testGetOrdersInvalidUser">testGetOrdersInvalidUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.LoginTest" class="method navigator-link" hash-for-method="testLoginWrongPassword">testLoginWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.CartPageTest" class="method navigator-link" hash-for-method="testRemoveCartItem">testRemoveCartItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BookStore_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BookStore_Test_Suite" class="hide-methods passed suite-BookStore_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-BookStore_Test_Suite -->
+                      <a href="#" panel-name="suite-BookStore_Test_Suite" class="show-methods passed suite-BookStore_Test_Suite"> (show)</a> <!-- show-methods passed suite-BookStore_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-BookStore_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BookApiTest" class="method navigator-link" hash-for-method="testAddBook">testAddBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BookApiTest" class="method navigator-link" hash-for-method="testAddBookNonAdmin">testAddBookNonAdmin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.CartPageTest" class="method navigator-link" hash-for-method="testAddBookToCart">testAddBookToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.ReviewApiTest" class="method navigator-link" hash-for-method="testAddReview">testAddReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.ReviewApiTest" class="method navigator-link" hash-for-method="testAddReviewNotOrdered">testAddReviewNotOrdered</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.CartApiTest" class="method navigator-link" hash-for-method="testAddToCart">testAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.CartApiTest" class="method navigator-link" hash-for-method="testAddToCartAgain">testAddToCartAgain</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.OrderApiTest" class="method navigator-link" hash-for-method="testAddToCartBeforeOrder">testAddToCartBeforeOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BookDetailTest" class="method navigator-link" hash-for-method="testAddToCartButtonVisible">testAddToCartButtonVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.CartApiTest" class="method navigator-link" hash-for-method="testAddToCartInvalidUser">testAddToCartInvalidUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BookDetailTest" class="method navigator-link" hash-for-method="testAddToCartShowsAlert">testAddToCartShowsAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.DashboardTest" class="method navigator-link" hash-for-method="testAdminBadgeNotVisibleForUser">testAdminBadgeNotVisibleForUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.DashboardTest" class="method navigator-link" hash-for-method="testAdminBadgeVisible">testAdminBadgeVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BlogsPageTest" class="method navigator-link" hash-for-method="testBlogTitleVisible">testBlogTitleVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BlogsPageTest" class="method navigator-link" hash-for-method="testBlogsAreDisplayed">testBlogsAreDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BlogsPageTest" class="method navigator-link" hash-for-method="testBlogsPageLoads">testBlogsPageLoads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BlogsPageTest" class="method navigator-link" hash-for-method="testBlogsPageWithoutLogin">testBlogsPageWithoutLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BookDetailTest" class="method navigator-link" hash-for-method="testBookDetailPageLoads">testBookDetailPageLoads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BookDetailTest" class="method navigator-link" hash-for-method="testBookDetailsDisplayed">testBookDetailsDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BooksPageTest" class="method navigator-link" hash-for-method="testBooksAreDisplayed">testBooksAreDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BooksPageTest" class="method navigator-link" hash-for-method="testBooksPageLoads">testBooksPageLoads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.CartPageTest" class="method navigator-link" hash-for-method="testCartPageLoads">testCartPageLoads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.CartApiTest" class="method navigator-link" hash-for-method="testClearCart">testClearCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BlogApiTest" class="method navigator-link" hash-for-method="testCreateBlog">testCreateBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BlogsPageTest" class="method navigator-link" hash-for-method="testCreateBlog">testCreateBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.DashboardTest" class="method navigator-link" hash-for-method="testDashboardLoads">testDashboardLoads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BlogApiTest" class="method navigator-link" hash-for-method="testDeleteBlog">testDeleteBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BlogApiTest" class="method navigator-link" hash-for-method="testDeleteBlogWrongUser">testDeleteBlogWrongUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.ReviewApiTest" class="method navigator-link" hash-for-method="testDeleteReview">testDeleteReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.DashboardTest" class="method navigator-link" hash-for-method="testFeatureCardsVisible">testFeatureCardsVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BooksPageTest" class="method navigator-link" hash-for-method="testFilterByCategory">testFilterByCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BlogApiTest" class="method navigator-link" hash-for-method="testGetAllBlogs">testGetAllBlogs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BookApiTest" class="method navigator-link" hash-for-method="testGetAllBooks">testGetAllBooks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BlogApiTest" class="method navigator-link" hash-for-method="testGetBlogById">testGetBlogById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BookApiTest" class="method navigator-link" hash-for-method="testGetBookById">testGetBookById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BookApiTest" class="method navigator-link" hash-for-method="testGetBookByInvalidId">testGetBookByInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BookApiTest" class="method navigator-link" hash-for-method="testGetBooksByAuthor">testGetBooksByAuthor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BookApiTest" class="method navigator-link" hash-for-method="testGetBooksByCategory">testGetBooksByCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BookApiTest" class="method navigator-link" hash-for-method="testGetBooksByInvalidAuthor">testGetBooksByInvalidAuthor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.CartApiTest" class="method navigator-link" hash-for-method="testGetCart">testGetCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.OrderApiTest" class="method navigator-link" hash-for-method="testGetOrderDetails">testGetOrderDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.OrderApiTest" class="method navigator-link" hash-for-method="testGetOrdersByUser">testGetOrdersByUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.ReviewApiTest" class="method navigator-link" hash-for-method="testGetReviewsByBook">testGetReviewsByBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.ReviewApiTest" class="method navigator-link" hash-for-method="testGetReviewsByUser">testGetReviewsByUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.UserApiTest" class="method navigator-link" hash-for-method="testGetUserById">testGetUserById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.UserApiTest" class="method navigator-link" hash-for-method="testGetUserInvalidId">testGetUserInvalidId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.DashboardTest" class="method navigator-link" hash-for-method="testGoToBlogsNavigation">testGoToBlogsNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.DashboardTest" class="method navigator-link" hash-for-method="testGoToBooksNavigation">testGoToBooksNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.DashboardTest" class="method navigator-link" hash-for-method="testGoToCartNavigation">testGoToCartNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.CartPageTest" class="method navigator-link" hash-for-method="testIncreaseQuantity">testIncreaseQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.LoginTest" class="method navigator-link" hash-for-method="testLoginEmptyFields">testLoginEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.UserApiTest" class="method navigator-link" hash-for-method="testLoginNonExistentEmail">testLoginNonExistentEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.LoginTest" class="method navigator-link" hash-for-method="testLoginPageLoads">testLoginPageLoads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.UserApiTest" class="method navigator-link" hash-for-method="testLoginSuccess">testLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.LoginTest" class="method navigator-link" hash-for-method="testLoginSuccess">testLoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.UserApiTest" class="method navigator-link" hash-for-method="testLoginWrongPassword">testLoginWrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.RegisterTest" class="method navigator-link" hash-for-method="testNavigateToLogin">testNavigateToLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.LoginTest" class="method navigator-link" hash-for-method="testNavigateToRegister">testNavigateToRegister</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.OrderApiTest" class="method navigator-link" hash-for-method="testPlaceOrder">testPlaceOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.CartPageTest" class="method navigator-link" hash-for-method="testPlaceOrder">testPlaceOrder</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.OrderApiTest" class="method navigator-link" hash-for-method="testPlaceOrderEmptyCart">testPlaceOrderEmptyCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.RegisterTest" class="method navigator-link" hash-for-method="testRegisterEmptyFields">testRegisterEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.RegisterTest" class="method navigator-link" hash-for-method="testRegisterPageLoads">testRegisterPageLoads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.UserApiTest" class="method navigator-link" hash-for-method="testRegisterSuccess">testRegisterSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.RegisterTest" class="method navigator-link" hash-for-method="testRegisterSuccess">testRegisterSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.CartApiTest" class="method navigator-link" hash-for-method="testRemoveFromCart">testRemoveFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BookDetailTest" class="method navigator-link" hash-for-method="testReviewsSectionVisible">testReviewsSectionVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BooksPageTest" class="method navigator-link" hash-for-method="testSearchByTitle">testSearchByTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BooksPageTest" class="method navigator-link" hash-for-method="testSearchNoResults">testSearchNoResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.UserApiTest" class="method navigator-link" hash-for-method="testServerIsRunning">testServerIsRunning</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.BlogApiTest" class="method navigator-link" hash-for-method="testUpdateBlog">testUpdateBlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.CartApiTest" class="method navigator-link" hash-for-method="testUpdateQuantity">testUpdateQuantity</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.ReviewApiTest" class="method navigator-link" hash-for-method="testUpdateReview">testUpdateReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.api.ReviewApiTest" class="method navigator-link" hash-for-method="testUpdateReviewWrongUser">testUpdateReviewWrongUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BooksPageTest" class="method navigator-link" hash-for-method="testViewBookDetails">testViewBookDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BlogsPageTest" class="method navigator-link" hash-for-method="testWriteBlogButtonVisible">testWriteBlogButtonVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BookStore_Test_Suite" title="com.miniproject.book_store.ui.BookDetailTest" class="method navigator-link" hash-for-method="testWriteReviewSectionVisible">testWriteReviewSectionVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BookStore_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BookStore_Test_Suite" class="panel BookStore_Test_Suite">
+          <div class="suite-BookStore_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.CartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveCartItem">
+                  </a> <!-- testRemoveCartItem -->
+                  <span class="method-name">testRemoveCartItem</span>
+                  <div class="stack-trace">java.lang.AssertionError: Item should be removed from cart expected [true] but found [false]
+	at com.miniproject.book_store.ui.CartPageTest.testRemoveCartItem(CartPageTest.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Remove item from cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-failed -->
+          <div class="suite-BookStore_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.miniproject.book_store.api.BlogApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBlogByInvalidId">
+                  </a> <!-- testGetBlogByInvalidId -->
+                  <span class="method-name">testGetBlogByInvalidId</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid blog ID should return 404 expected [404] but found [500]
+	at com.miniproject.book_store.api.BlogApiTest.testGetBlogByInvalidId(BlogApiTest.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Get blog by invalid ID should return 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-failed -->
+          <div class="suite-BookStore_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWrongPassword">
+                  </a> <!-- testLoginWrongPassword -->
+                  <span class="method-name">testLoginWrongPassword</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .alert-danger (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 148.0.3967.83, fedcm:accounts: true, goog:processID: 28412, ms:edgeOptions: {debuggerAddress: localhost:51528}, msedge: {msedgedriverVersion: 148.0.3967.96 (9df8cc82dba1..., userDataDir: C:\Users\2485187\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51528/devtoo..., se:cdpVersion: 148.0.3967.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f720c0eca1c8f0e1dc798c808def489
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.miniproject.book_store.ui.LoginTest.testLoginWrongPassword(LoginTest.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login with wrong password should show error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-failed -->
+          <div class="suite-BookStore_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.miniproject.book_store.api.OrderApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetOrderDetailsInvalidId">
+                  </a> <!-- testGetOrderDetailsInvalidId -->
+                  <span class="method-name">testGetOrderDetailsInvalidId</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid order ID should return 400 expected [400] but found [500]
+	at com.miniproject.book_store.api.OrderApiTest.testGetOrderDetailsInvalidId(OrderApiTest.java:197)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Get order details with invalid ID should return 400)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetOrdersInvalidUser">
+                  </a> <!-- testGetOrdersInvalidUser -->
+                  <span class="method-name">testGetOrdersInvalidUser</span>
+                  <div class="stack-trace">java.lang.AssertionError: Invalid user should return 404 expected [404] but found [500]
+	at com.miniproject.book_store.api.OrderApiTest.testGetOrdersInvalidUser(OrderApiTest.java:146)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Get orders of invalid user should return 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-failed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.api.CartApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
+                  <em>
+(Add book to cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCartAgain">
+                  </a> <!-- testAddToCartAgain -->
+                  <span class="method-name">testAddToCartAgain</span>
+                  <em>
+(Add item again before clearing cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCartInvalidUser">
+                  </a> <!-- testAddToCartInvalidUser -->
+                  <span class="method-name">testAddToCartInvalidUser</span>
+                  <em>
+(Add to cart with invalid user should return 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClearCart">
+                  </a> <!-- testClearCart -->
+                  <span class="method-name">testClearCart</span>
+                  <em>
+(Clear entire cart of user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetCart">
+                  </a> <!-- testGetCart -->
+                  <span class="method-name">testGetCart</span>
+                  <em>
+(Get cart of user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRemoveFromCart">
+                  </a> <!-- testRemoveFromCart -->
+                  <span class="method-name">testRemoveFromCart</span>
+                  <em>
+(Remove item from cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateQuantity">
+                  </a> <!-- testUpdateQuantity -->
+                  <span class="method-name">testUpdateQuantity</span>
+                  <em>
+(Update cart item quantity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.BooksPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBooksAreDisplayed">
+                  </a> <!-- testBooksAreDisplayed -->
+                  <span class="method-name">testBooksAreDisplayed</span>
+                  <em>
+(Books should be displayed on page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBooksPageLoads">
+                  </a> <!-- testBooksPageLoads -->
+                  <span class="method-name">testBooksPageLoads</span>
+                  <em>
+(Books page should load correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFilterByCategory">
+                  </a> <!-- testFilterByCategory -->
+                  <span class="method-name">testFilterByCategory</span>
+                  <em>
+(Filter by category should show filtered books)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchByTitle">
+                  </a> <!-- testSearchByTitle -->
+                  <span class="method-name">testSearchByTitle</span>
+                  <em>
+(Search by title should filter books)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchNoResults">
+                  </a> <!-- testSearchNoResults -->
+                  <span class="method-name">testSearchNoResults</span>
+                  <em>
+(Search with no match should show no books)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testViewBookDetails">
+                  </a> <!-- testViewBookDetails -->
+                  <span class="method-name">testViewBookDetails</span>
+                  <em>
+(Click View Details should navigate to book detail page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginEmptyFields">
+                  </a> <!-- testLoginEmptyFields -->
+                  <span class="method-name">testLoginEmptyFields</span>
+                  <em>
+(Login with empty fields should show error)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginPageLoads">
+                  </a> <!-- testLoginPageLoads -->
+                  <span class="method-name">testLoginPageLoads</span>
+                  <em>
+(Login page should load correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSuccess">
+                  </a> <!-- testLoginSuccess -->
+                  <span class="method-name">testLoginSuccess</span>
+                  <em>
+(Login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigateToRegister">
+                  </a> <!-- testNavigateToRegister -->
+                  <span class="method-name">testNavigateToRegister</span>
+                  <em>
+(Click register link should go to register page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNavigateToLogin">
+                  </a> <!-- testNavigateToLogin -->
+                  <span class="method-name">testNavigateToLogin</span>
+                  <em>
+(Click login link should go to login page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterEmptyFields">
+                  </a> <!-- testRegisterEmptyFields -->
+                  <span class="method-name">testRegisterEmptyFields</span>
+                  <em>
+(Register with empty fields should stay on page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterPageLoads">
+                  </a> <!-- testRegisterPageLoads -->
+                  <span class="method-name">testRegisterPageLoads</span>
+                  <em>
+(Register page should load correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterSuccess">
+                  </a> <!-- testRegisterSuccess -->
+                  <span class="method-name">testRegisterSuccess</span>
+                  <em>
+(Register with valid details successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.api.BookApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddBook">
+                  </a> <!-- testAddBook -->
+                  <span class="method-name">testAddBook</span>
+                  <em>
+(Add a new book as admin)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddBookNonAdmin">
+                  </a> <!-- testAddBookNonAdmin -->
+                  <span class="method-name">testAddBookNonAdmin</span>
+                  <em>
+(Add book as non admin should return 403)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllBooks">
+                  </a> <!-- testGetAllBooks -->
+                  <span class="method-name">testGetAllBooks</span>
+                  <em>
+(Get all books)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById">
+                  </a> <!-- testGetBookById -->
+                  <span class="method-name">testGetBookById</span>
+                  <em>
+(Get book by valid ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookByInvalidId">
+                  </a> <!-- testGetBookByInvalidId -->
+                  <span class="method-name">testGetBookByInvalidId</span>
+                  <em>
+(Get book by invalid ID should return 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBooksByAuthor">
+                  </a> <!-- testGetBooksByAuthor -->
+                  <span class="method-name">testGetBooksByAuthor</span>
+                  <em>
+(Get books by author)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBooksByCategory">
+                  </a> <!-- testGetBooksByCategory -->
+                  <span class="method-name">testGetBooksByCategory</span>
+                  <em>
+(Get books by category)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBooksByInvalidAuthor">
+                  </a> <!-- testGetBooksByInvalidAuthor -->
+                  <span class="method-name">testGetBooksByInvalidAuthor</span>
+                  <em>
+(Get books by invalid author should return 400)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.CartPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddBookToCart">
+                  </a> <!-- testAddBookToCart -->
+                  <span class="method-name">testAddBookToCart</span>
+                  <em>
+(Add book to cart and verify it appears)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCartPageLoads">
+                  </a> <!-- testCartPageLoads -->
+                  <span class="method-name">testCartPageLoads</span>
+                  <em>
+(Cart page should load correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIncreaseQuantity">
+                  </a> <!-- testIncreaseQuantity -->
+                  <span class="method-name">testIncreaseQuantity</span>
+                  <em>
+(Increase cart item quantity)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlaceOrder">
+                  </a> <!-- testPlaceOrder -->
+                  <span class="method-name">testPlaceOrder</span>
+                  <em>
+(Place order from cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.api.BlogApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBlog">
+                  </a> <!-- testCreateBlog -->
+                  <span class="method-name">testCreateBlog</span>
+                  <em>
+(Create a new blog successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBlog">
+                  </a> <!-- testDeleteBlog -->
+                  <span class="method-name">testDeleteBlog</span>
+                  <em>
+(Delete blog successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBlogWrongUser">
+                  </a> <!-- testDeleteBlogWrongUser -->
+                  <span class="method-name">testDeleteBlogWrongUser</span>
+                  <em>
+(Delete blog by wrong user should return 403)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllBlogs">
+                  </a> <!-- testGetAllBlogs -->
+                  <span class="method-name">testGetAllBlogs</span>
+                  <em>
+(Get all blogs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBlogById">
+                  </a> <!-- testGetBlogById -->
+                  <span class="method-name">testGetBlogById</span>
+                  <em>
+(Get blog by valid ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateBlog">
+                  </a> <!-- testUpdateBlog -->
+                  <span class="method-name">testUpdateBlog</span>
+                  <em>
+(Update blog successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.BlogsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlogTitleVisible">
+                  </a> <!-- testBlogTitleVisible -->
+                  <span class="method-name">testBlogTitleVisible</span>
+                  <em>
+(Blog title should be visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlogsAreDisplayed">
+                  </a> <!-- testBlogsAreDisplayed -->
+                  <span class="method-name">testBlogsAreDisplayed</span>
+                  <em>
+(Blogs should be displayed on page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlogsPageLoads">
+                  </a> <!-- testBlogsPageLoads -->
+                  <span class="method-name">testBlogsPageLoads</span>
+                  <em>
+(Blogs page should load correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBlogsPageWithoutLogin">
+                  </a> <!-- testBlogsPageWithoutLogin -->
+                  <span class="method-name">testBlogsPageWithoutLogin</span>
+                  <em>
+(Blogs page should be accessible without login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBlog">
+                  </a> <!-- testCreateBlog -->
+                  <span class="method-name">testCreateBlog</span>
+                  <em>
+(Create a new blog successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWriteBlogButtonVisible">
+                  </a> <!-- testWriteBlogButtonVisible -->
+                  <span class="method-name">testWriteBlogButtonVisible</span>
+                  <em>
+(Write a Blog button should be visible after login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.api.OrderApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCartBeforeOrder">
+                  </a> <!-- testAddToCartBeforeOrder -->
+                  <span class="method-name">testAddToCartBeforeOrder</span>
+                  <em>
+(Add book to cart before placing order)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetOrderDetails">
+                  </a> <!-- testGetOrderDetails -->
+                  <span class="method-name">testGetOrderDetails</span>
+                  <em>
+(Get order details by order ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetOrdersByUser">
+                  </a> <!-- testGetOrdersByUser -->
+                  <span class="method-name">testGetOrdersByUser</span>
+                  <em>
+(Get all orders of user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlaceOrder">
+                  </a> <!-- testPlaceOrder -->
+                  <span class="method-name">testPlaceOrder</span>
+                  <em>
+(Place order successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPlaceOrderEmptyCart">
+                  </a> <!-- testPlaceOrderEmptyCart -->
+                  <span class="method-name">testPlaceOrderEmptyCart</span>
+                  <em>
+(Place order with empty cart should fail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.api.UserApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserById">
+                  </a> <!-- testGetUserById -->
+                  <span class="method-name">testGetUserById</span>
+                  <em>
+(Get user by valid ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserInvalidId">
+                  </a> <!-- testGetUserInvalidId -->
+                  <span class="method-name">testGetUserInvalidId</span>
+                  <em>
+(Get user with invalid ID should return 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginNonExistentEmail">
+                  </a> <!-- testLoginNonExistentEmail -->
+                  <span class="method-name">testLoginNonExistentEmail</span>
+                  <em>
+(Login with non existent email should return 401)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginSuccess">
+                  </a> <!-- testLoginSuccess -->
+                  <span class="method-name">testLoginSuccess</span>
+                  <em>
+(Login with correct credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginWrongPassword">
+                  </a> <!-- testLoginWrongPassword -->
+                  <span class="method-name">testLoginWrongPassword</span>
+                  <em>
+(Login with wrong password should return 401)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testRegisterSuccess">
+                  </a> <!-- testRegisterSuccess -->
+                  <span class="method-name">testRegisterSuccess</span>
+                  <em>
+(Register a new user successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testServerIsRunning">
+                  </a> <!-- testServerIsRunning -->
+                  <span class="method-name">testServerIsRunning</span>
+                  <em>
+(Check if Spring Boot server is reachable)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.BookDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCartButtonVisible">
+                  </a> <!-- testAddToCartButtonVisible -->
+                  <span class="method-name">testAddToCartButtonVisible</span>
+                  <em>
+(Add to cart button should be visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCartShowsAlert">
+                  </a> <!-- testAddToCartShowsAlert -->
+                  <span class="method-name">testAddToCartShowsAlert</span>
+                  <em>
+(Clicking Add to cart should show success alert)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBookDetailPageLoads">
+                  </a> <!-- testBookDetailPageLoads -->
+                  <span class="method-name">testBookDetailPageLoads</span>
+                  <em>
+(Book detail page should load correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBookDetailsDisplayed">
+                  </a> <!-- testBookDetailsDisplayed -->
+                  <span class="method-name">testBookDetailsDisplayed</span>
+                  <em>
+(Book details should be displayed correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testReviewsSectionVisible">
+                  </a> <!-- testReviewsSectionVisible -->
+                  <span class="method-name">testReviewsSectionVisible</span>
+                  <em>
+(Customer Reviews section should be visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWriteReviewSectionVisible">
+                  </a> <!-- testWriteReviewSectionVisible -->
+                  <span class="method-name">testWriteReviewSectionVisible</span>
+                  <em>
+(Write a Review section should be visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.api.ReviewApiTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddReview">
+                  </a> <!-- testAddReview -->
+                  <span class="method-name">testAddReview</span>
+                  <em>
+(Add review for ordered book)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddReviewNotOrdered">
+                  </a> <!-- testAddReviewNotOrdered -->
+                  <span class="method-name">testAddReviewNotOrdered</span>
+                  <em>
+(Add review for non ordered book should fail)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteReview">
+                  </a> <!-- testDeleteReview -->
+                  <span class="method-name">testDeleteReview</span>
+                  <em>
+(Delete review successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetReviewsByBook">
+                  </a> <!-- testGetReviewsByBook -->
+                  <span class="method-name">testGetReviewsByBook</span>
+                  <em>
+(Get reviews by book ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetReviewsByUser">
+                  </a> <!-- testGetReviewsByUser -->
+                  <span class="method-name">testGetReviewsByUser</span>
+                  <em>
+(Get reviews by user ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateReview">
+                  </a> <!-- testUpdateReview -->
+                  <span class="method-name">testUpdateReview</span>
+                  <em>
+(Update review successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateReviewWrongUser">
+                  </a> <!-- testUpdateReviewWrongUser -->
+                  <span class="method-name">testUpdateReviewWrongUser</span>
+                  <em>
+(Update review by wrong user should return 403)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+          <div class="suite-BookStore_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.miniproject.book_store.ui.DashboardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdminBadgeNotVisibleForUser">
+                  </a> <!-- testAdminBadgeNotVisibleForUser -->
+                  <span class="method-name">testAdminBadgeNotVisibleForUser</span>
+                  <em>
+(Admin badge should NOT be visible for regular user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAdminBadgeVisible">
+                  </a> <!-- testAdminBadgeVisible -->
+                  <span class="method-name">testAdminBadgeVisible</span>
+                  <em>
+(Admin badge should be visible for admin user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDashboardLoads">
+                  </a> <!-- testDashboardLoads -->
+                  <span class="method-name">testDashboardLoads</span>
+                  <em>
+(Dashboard page should load correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFeatureCardsVisible">
+                  </a> <!-- testFeatureCardsVisible -->
+                  <span class="method-name">testFeatureCardsVisible</span>
+                  <em>
+(All 3 feature cards should be visible)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGoToBlogsNavigation">
+                  </a> <!-- testGoToBlogsNavigation -->
+                  <span class="method-name">testGoToBlogsNavigation</span>
+                  <em>
+(Go to Blogs button should navigate to blogs page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGoToBooksNavigation">
+                  </a> <!-- testGoToBooksNavigation -->
+                  <span class="method-name">testGoToBooksNavigation</span>
+                  <em>
+(Go to Books button should navigate to books page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGoToCartNavigation">
+                  </a> <!-- testGoToCartNavigation -->
+                  <span class="method-name">testGoToCartNavigation</span>
+                  <em>
+(Go to Cart button should navigate to cart page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BookStore_Test_Suite-class-passed -->
+        </div> <!-- panel BookStore_Test_Suite -->
+        <div panel-name="test-xml-BookStore_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\2485187\Downloads\book_store (1)(java21)\book_store\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;BookStore Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;API Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.miniproject.book_store.api.UserApiTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.api.BookApiTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.api.CartApiTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.api.OrderApiTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.api.BlogApiTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.api.ReviewApiTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- API Tests --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UI Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.miniproject.book_store.ui.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.ui.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.ui.BooksPageTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.ui.CartPageTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.ui.DashboardTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.ui.BookDetailTest&quot;/&gt;
+      &lt;class name=&quot;com.miniproject.book_store.ui.BlogsPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UI Tests --&gt;
+&lt;/suite&gt; &lt;!-- BookStore Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BookStore_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BookStore Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">API Tests (6 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">UI Tests (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BookStore_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BookStore Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BookStore_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BookStore Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BookStore_Test_Suite');
+function tableData_BookStore_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(82);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testRemoveCartItem')
+data.setCell(0, 2, 'com.miniproject.book_store.ui.CartPageTest')
+data.setCell(0, 3, 23928);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testPlaceOrder')
+data.setCell(1, 2, 'com.miniproject.book_store.ui.CartPageTest')
+data.setCell(1, 3, 13979);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testAdminBadgeNotVisibleForUser')
+data.setCell(2, 2, 'com.miniproject.book_store.ui.DashboardTest')
+data.setCell(2, 3, 13458);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testIncreaseQuantity')
+data.setCell(3, 2, 'com.miniproject.book_store.ui.CartPageTest')
+data.setCell(3, 3, 12535);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLoginWrongPassword')
+data.setCell(4, 2, 'com.miniproject.book_store.ui.LoginTest')
+data.setCell(4, 3, 10837);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testAddBookToCart')
+data.setCell(5, 2, 'com.miniproject.book_store.ui.CartPageTest')
+data.setCell(5, 3, 10813);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testCreateBlog')
+data.setCell(6, 2, 'com.miniproject.book_store.ui.BlogsPageTest')
+data.setCell(6, 3, 7465);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGoToBooksNavigation')
+data.setCell(7, 2, 'com.miniproject.book_store.ui.DashboardTest')
+data.setCell(7, 3, 5527);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testGoToCartNavigation')
+data.setCell(8, 2, 'com.miniproject.book_store.ui.DashboardTest')
+data.setCell(8, 3, 5522);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testGoToBlogsNavigation')
+data.setCell(9, 2, 'com.miniproject.book_store.ui.DashboardTest')
+data.setCell(9, 3, 5478);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testAddToCartShowsAlert')
+data.setCell(10, 2, 'com.miniproject.book_store.ui.BookDetailTest')
+data.setCell(10, 3, 5012);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testViewBookDetails')
+data.setCell(11, 2, 'com.miniproject.book_store.ui.BooksPageTest')
+data.setCell(11, 3, 4494);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testSearchByTitle')
+data.setCell(12, 2, 'com.miniproject.book_store.ui.BooksPageTest')
+data.setCell(12, 3, 4250);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testFilterByCategory')
+data.setCell(13, 2, 'com.miniproject.book_store.ui.BooksPageTest')
+data.setCell(13, 3, 4111);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSearchNoResults')
+data.setCell(14, 2, 'com.miniproject.book_store.ui.BooksPageTest')
+data.setCell(14, 3, 4071);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testBookDetailPageLoads')
+data.setCell(15, 2, 'com.miniproject.book_store.ui.BookDetailTest')
+data.setCell(15, 3, 3504);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testWriteReviewSectionVisible')
+data.setCell(16, 2, 'com.miniproject.book_store.ui.BookDetailTest')
+data.setCell(16, 3, 3456);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testAddToCartButtonVisible')
+data.setCell(17, 2, 'com.miniproject.book_store.ui.BookDetailTest')
+data.setCell(17, 3, 3452);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testFeatureCardsVisible')
+data.setCell(18, 2, 'com.miniproject.book_store.ui.DashboardTest')
+data.setCell(18, 3, 3450);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testCartPageLoads')
+data.setCell(19, 2, 'com.miniproject.book_store.ui.CartPageTest')
+data.setCell(19, 3, 3447);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testBookDetailsDisplayed')
+data.setCell(20, 2, 'com.miniproject.book_store.ui.BookDetailTest')
+data.setCell(20, 3, 3431);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testReviewsSectionVisible')
+data.setCell(21, 2, 'com.miniproject.book_store.ui.BookDetailTest')
+data.setCell(21, 3, 3422);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testWriteBlogButtonVisible')
+data.setCell(22, 2, 'com.miniproject.book_store.ui.BlogsPageTest')
+data.setCell(22, 3, 3400);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testAdminBadgeVisible')
+data.setCell(23, 2, 'com.miniproject.book_store.ui.DashboardTest')
+data.setCell(23, 3, 3387);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testRegisterSuccess')
+data.setCell(24, 2, 'com.miniproject.book_store.ui.RegisterTest')
+data.setCell(24, 3, 3005);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testRegisterEmptyFields')
+data.setCell(25, 2, 'com.miniproject.book_store.ui.RegisterTest')
+data.setCell(25, 3, 2570);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testBlogsPageWithoutLogin')
+data.setCell(26, 2, 'com.miniproject.book_store.ui.BlogsPageTest')
+data.setCell(26, 3, 2419);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testBooksPageLoads')
+data.setCell(27, 2, 'com.miniproject.book_store.ui.BooksPageTest')
+data.setCell(27, 3, 2406);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testBlogTitleVisible')
+data.setCell(28, 2, 'com.miniproject.book_store.ui.BlogsPageTest')
+data.setCell(28, 3, 2405);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testBlogsPageLoads')
+data.setCell(29, 2, 'com.miniproject.book_store.ui.BlogsPageTest')
+data.setCell(29, 3, 2404);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testBlogsAreDisplayed')
+data.setCell(30, 2, 'com.miniproject.book_store.ui.BlogsPageTest')
+data.setCell(30, 3, 2363);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testBooksAreDisplayed')
+data.setCell(31, 2, 'com.miniproject.book_store.ui.BooksPageTest')
+data.setCell(31, 3, 2356);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testDashboardLoads')
+data.setCell(32, 2, 'com.miniproject.book_store.ui.DashboardTest')
+data.setCell(32, 3, 1424);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'testLoginSuccess')
+data.setCell(33, 2, 'com.miniproject.book_store.ui.LoginTest')
+data.setCell(33, 3, 1400);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'testLoginPageLoads')
+data.setCell(34, 2, 'com.miniproject.book_store.ui.LoginTest')
+data.setCell(34, 3, 743);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'testRegisterPageLoads')
+data.setCell(35, 2, 'com.miniproject.book_store.ui.RegisterTest')
+data.setCell(35, 3, 630);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'testNavigateToLogin')
+data.setCell(36, 2, 'com.miniproject.book_store.ui.RegisterTest')
+data.setCell(36, 3, 605);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testLoginEmptyFields')
+data.setCell(37, 2, 'com.miniproject.book_store.ui.LoginTest')
+data.setCell(37, 3, 577);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'testNavigateToRegister')
+data.setCell(38, 2, 'com.miniproject.book_store.ui.LoginTest')
+data.setCell(38, 3, 572);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'testServerIsRunning')
+data.setCell(39, 2, 'com.miniproject.book_store.api.UserApiTest')
+data.setCell(39, 3, 328);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'testRegisterSuccess')
+data.setCell(40, 2, 'com.miniproject.book_store.api.UserApiTest')
+data.setCell(40, 3, 116);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'testAddToCart')
+data.setCell(41, 2, 'com.miniproject.book_store.api.CartApiTest')
+data.setCell(41, 3, 55);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'testPlaceOrder')
+data.setCell(42, 2, 'com.miniproject.book_store.api.OrderApiTest')
+data.setCell(42, 3, 48);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'testLoginSuccess')
+data.setCell(43, 2, 'com.miniproject.book_store.api.UserApiTest')
+data.setCell(43, 3, 46);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'testAddReview')
+data.setCell(44, 2, 'com.miniproject.book_store.api.ReviewApiTest')
+data.setCell(44, 3, 40);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'testGetOrdersInvalidUser')
+data.setCell(45, 2, 'com.miniproject.book_store.api.OrderApiTest')
+data.setCell(45, 3, 30);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'testAddBook')
+data.setCell(46, 2, 'com.miniproject.book_store.api.BookApiTest')
+data.setCell(46, 3, 28);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'testGetCart')
+data.setCell(47, 2, 'com.miniproject.book_store.api.CartApiTest')
+data.setCell(47, 3, 22);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'testClearCart')
+data.setCell(48, 2, 'com.miniproject.book_store.api.CartApiTest')
+data.setCell(48, 3, 22);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'testGetReviewsByBook')
+data.setCell(49, 2, 'com.miniproject.book_store.api.ReviewApiTest')
+data.setCell(49, 3, 21);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'testAddToCartBeforeOrder')
+data.setCell(50, 2, 'com.miniproject.book_store.api.OrderApiTest')
+data.setCell(50, 3, 21);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'testCreateBlog')
+data.setCell(51, 2, 'com.miniproject.book_store.api.BlogApiTest')
+data.setCell(51, 3, 20);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'testGetOrdersByUser')
+data.setCell(52, 2, 'com.miniproject.book_store.api.OrderApiTest')
+data.setCell(52, 3, 20);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'testUpdateBlog')
+data.setCell(53, 2, 'com.miniproject.book_store.api.BlogApiTest')
+data.setCell(53, 3, 20);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'testDeleteBlog')
+data.setCell(54, 2, 'com.miniproject.book_store.api.BlogApiTest')
+data.setCell(54, 3, 20);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'testRemoveFromCart')
+data.setCell(55, 2, 'com.miniproject.book_store.api.CartApiTest')
+data.setCell(55, 3, 20);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'testPlaceOrderEmptyCart')
+data.setCell(56, 2, 'com.miniproject.book_store.api.OrderApiTest')
+data.setCell(56, 3, 19);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'testUpdateQuantity')
+data.setCell(57, 2, 'com.miniproject.book_store.api.CartApiTest')
+data.setCell(57, 3, 17);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'testGetUserById')
+data.setCell(58, 2, 'com.miniproject.book_store.api.UserApiTest')
+data.setCell(58, 3, 16);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'testAddToCartAgain')
+data.setCell(59, 2, 'com.miniproject.book_store.api.CartApiTest')
+data.setCell(59, 3, 16);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'testAddReviewNotOrdered')
+data.setCell(60, 2, 'com.miniproject.book_store.api.ReviewApiTest')
+data.setCell(60, 3, 15);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'testUpdateReview')
+data.setCell(61, 2, 'com.miniproject.book_store.api.ReviewApiTest')
+data.setCell(61, 3, 14);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'testGetReviewsByUser')
+data.setCell(62, 2, 'com.miniproject.book_store.api.ReviewApiTest')
+data.setCell(62, 3, 13);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'testGetBlogById')
+data.setCell(63, 2, 'com.miniproject.book_store.api.BlogApiTest')
+data.setCell(63, 3, 12);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'testGetBookById')
+data.setCell(64, 2, 'com.miniproject.book_store.api.BookApiTest')
+data.setCell(64, 3, 12);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'testDeleteReview')
+data.setCell(65, 2, 'com.miniproject.book_store.api.ReviewApiTest')
+data.setCell(65, 3, 12);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'testGetBooksByAuthor')
+data.setCell(66, 2, 'com.miniproject.book_store.api.BookApiTest')
+data.setCell(66, 3, 12);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'testGetAllBlogs')
+data.setCell(67, 2, 'com.miniproject.book_store.api.BlogApiTest')
+data.setCell(67, 3, 12);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'testGetOrderDetails')
+data.setCell(68, 2, 'com.miniproject.book_store.api.OrderApiTest')
+data.setCell(68, 3, 12);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'testGetBookByInvalidId')
+data.setCell(69, 2, 'com.miniproject.book_store.api.BookApiTest')
+data.setCell(69, 3, 11);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'testGetAllBooks')
+data.setCell(70, 2, 'com.miniproject.book_store.api.BookApiTest')
+data.setCell(70, 3, 11);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'testGetBooksByCategory')
+data.setCell(71, 2, 'com.miniproject.book_store.api.BookApiTest')
+data.setCell(71, 3, 11);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'testAddToCartInvalidUser')
+data.setCell(72, 2, 'com.miniproject.book_store.api.CartApiTest')
+data.setCell(72, 3, 11);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'testDeleteBlogWrongUser')
+data.setCell(73, 2, 'com.miniproject.book_store.api.BlogApiTest')
+data.setCell(73, 3, 10);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'testLoginWrongPassword')
+data.setCell(74, 2, 'com.miniproject.book_store.api.UserApiTest')
+data.setCell(74, 3, 9);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'testGetOrderDetailsInvalidId')
+data.setCell(75, 2, 'com.miniproject.book_store.api.OrderApiTest')
+data.setCell(75, 3, 9);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'testAddBookNonAdmin')
+data.setCell(76, 2, 'com.miniproject.book_store.api.BookApiTest')
+data.setCell(76, 3, 8);
+data.setCell(77, 0, 77)
+data.setCell(77, 1, 'testGetBlogByInvalidId')
+data.setCell(77, 2, 'com.miniproject.book_store.api.BlogApiTest')
+data.setCell(77, 3, 8);
+data.setCell(78, 0, 78)
+data.setCell(78, 1, 'testGetUserInvalidId')
+data.setCell(78, 2, 'com.miniproject.book_store.api.UserApiTest')
+data.setCell(78, 3, 7);
+data.setCell(79, 0, 79)
+data.setCell(79, 1, 'testUpdateReviewWrongUser')
+data.setCell(79, 2, 'com.miniproject.book_store.api.ReviewApiTest')
+data.setCell(79, 3, 7);
+data.setCell(80, 0, 80)
+data.setCell(80, 1, 'testLoginNonExistentEmail')
+data.setCell(80, 2, 'com.miniproject.book_store.api.UserApiTest')
+data.setCell(80, 3, 6);
+data.setCell(81, 0, 81)
+data.setCell(81, 1, 'testGetBooksByInvalidAuthor')
+data.setCell(81, 2, 'com.miniproject.book_store.api.BookApiTest')
+data.setCell(81, 3, 5);
+window.suiteTableData['BookStore_Test_Suite']= { tableData: data, tableDiv: 'times-div-BookStore_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-BookStore_Test_Suite">
+              </div> <!-- times-div-BookStore_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BookStore_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BookStore Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BookStore_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">5 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.miniproject.book_store.api.CartApiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupApi</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.miniproject.book_store.api.BlogApiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupApi</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.miniproject.book_store.api.OrderApiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupApi</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.miniproject.book_store.api.BookApiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupApi</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.miniproject.book_store.api.ReviewApiTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupApi</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BookStore_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.api.UserApiTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupApi</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">testServerIsRunning</span>
+                <span class="method-start">440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRegisterSuccess</span>
+                <span class="method-start">776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginSuccess</span>
+                <span class="method-start">893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginWrongPassword</span>
+                <span class="method-start">940 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLoginNonExistentEmail</span>
+                <span class="method-start">950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUserById</span>
+                <span class="method-start">958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetUserInvalidId</span>
+                <span class="method-start">975 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.api.BookApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetAllBooks</span>
+                <span class="method-start">983 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById</span>
+                <span class="method-start">995 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBookByInvalidId</span>
+                <span class="method-start">1008 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBooksByAuthor</span>
+                <span class="method-start">1020 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBooksByInvalidAuthor</span>
+                <span class="method-start">1033 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBooksByCategory</span>
+                <span class="method-start">1039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddBook</span>
+                <span class="method-start">1051 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddBookNonAdmin</span>
+                <span class="method-start">1081 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.api.CartApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddToCart</span>
+                <span class="method-start">1090 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetCart</span>
+                <span class="method-start">1146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateQuantity</span>
+                <span class="method-start">1169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testRemoveFromCart</span>
+                <span class="method-start">1187 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToCartAgain</span>
+                <span class="method-start">1209 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testClearCart</span>
+                <span class="method-start">1226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddToCartInvalidUser</span>
+                <span class="method-start">1248 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.api.OrderApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testAddToCartBeforeOrder</span>
+                <span class="method-start">1260 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPlaceOrder</span>
+                <span class="method-start">1281 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPlaceOrderEmptyCart</span>
+                <span class="method-start">1330 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetOrdersByUser</span>
+                <span class="method-start">1349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetOrdersInvalidUser</span>
+                <span class="method-start">1370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetOrderDetails</span>
+                <span class="method-start">1405 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetOrderDetailsInvalidId</span>
+                <span class="method-start">1418 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.api.BlogApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetAllBlogs</span>
+                <span class="method-start">1427 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetBlogById</span>
+                <span class="method-start">1439 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetBlogByInvalidId</span>
+                <span class="method-start">1452 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateBlog</span>
+                <span class="method-start">1461 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateBlog</span>
+                <span class="method-start">1484 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteBlog</span>
+                <span class="method-start">1505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteBlogWrongUser</span>
+                <span class="method-start">1525 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.api.ReviewApiTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testGetReviewsByBook</span>
+                <span class="method-start">1535 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testGetReviewsByUser</span>
+                <span class="method-start">1556 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddReview</span>
+                <span class="method-start">1570 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddReviewNotOrdered</span>
+                <span class="method-start">1610 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateReview</span>
+                <span class="method-start">1626 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateReviewWrongUser</span>
+                <span class="method-start">1641 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteReview</span>
+                <span class="method-start">1648 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.ui.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">1729 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginPageLoads</span>
+                <span class="method-start">6024 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">6768 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">15268 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginSuccess</span>
+                <span class="method-start">18368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">19769 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">26688 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLoginWrongPassword</span>
+                <span class="method-start">30189 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">41034 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">48564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLoginEmptyFields</span>
+                <span class="method-start">51887 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">52465 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">58651 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNavigateToRegister</span>
+                <span class="method-start">61770 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">62343 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.ui.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">68417 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterPageLoads</span>
+                <span class="method-start">71730 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">72361 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">80475 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterSuccess</span>
+                <span class="method-start">83583 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">86588 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">93928 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testRegisterEmptyFields</span>
+                <span class="method-start">97118 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">99689 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">107647 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNavigateToLogin</span>
+                <span class="method-start">110884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">111490 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.ui.BooksPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">119919 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBooksPageLoads</span>
+                <span class="method-start">123002 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">125408 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">133124 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBooksAreDisplayed</span>
+                <span class="method-start">136210 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">138566 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">145938 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchByTitle</span>
+                <span class="method-start">149361 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">153612 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">161406 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchNoResults</span>
+                <span class="method-start">164562 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">168633 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">176429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFilterByCategory</span>
+                <span class="method-start">180022 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">184133 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">191627 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testViewBookDetails</span>
+                <span class="method-start">195069 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">199563 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.ui.CartPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">207123 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCartPageLoads</span>
+                <span class="method-start">210425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">213872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">221409 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddBookToCart</span>
+                <span class="method-start">224720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">235534 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">243274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testIncreaseQuantity</span>
+                <span class="method-start">246434 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">258969 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">266568 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testRemoveCartItem</span>
+                <span class="method-start">269791 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">293721 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">301239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPlaceOrder</span>
+                <span class="method-start">304419 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">318398 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.ui.DashboardTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">326286 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDashboardLoads</span>
+                <span class="method-start">329454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">330879 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">337206 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFeatureCardsVisible</span>
+                <span class="method-start">340617 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">344068 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">351639 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGoToBooksNavigation</span>
+                <span class="method-start">354848 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">360375 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">367744 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGoToCartNavigation</span>
+                <span class="method-start">370984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">376506 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">384020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGoToBlogsNavigation</span>
+                <span class="method-start">387413 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">392892 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">400824 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAdminBadgeVisible</span>
+                <span class="method-start">403919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">407307 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">415160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAdminBadgeNotVisibleForUser</span>
+                <span class="method-start">418299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">431757 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.ui.BookDetailTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">439685 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBookDetailPageLoads</span>
+                <span class="method-start">442927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">446431 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">453887 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBookDetailsDisplayed</span>
+                <span class="method-start">457045 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">460477 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">468328 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddToCartButtonVisible</span>
+                <span class="method-start">471491 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">474943 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">482704 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddToCartShowsAlert</span>
+                <span class="method-start">485872 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">490886 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">499160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testReviewsSectionVisible</span>
+                <span class="method-start">502419 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">505841 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">513398 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testWriteReviewSectionVisible</span>
+                <span class="method-start">516491 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">519948 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.miniproject.book_store.ui.BlogsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">527486 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBlogsPageLoads</span>
+                <span class="method-start">530747 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">533151 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">540544 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBlogsAreDisplayed</span>
+                <span class="method-start">543773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">546137 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">553729 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBlogTitleVisible</span>
+                <span class="method-start">556858 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">559263 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">566793 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testWriteBlogButtonVisible</span>
+                <span class="method-start">570262 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">573662 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">581707 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateBlog</span>
+                <span class="method-start">585102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">592567 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">openBrowser</span>
+                <span class="method-start">600089 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBlogsPageWithoutLogin</span>
+                <span class="method-start">603204 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">605624 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
