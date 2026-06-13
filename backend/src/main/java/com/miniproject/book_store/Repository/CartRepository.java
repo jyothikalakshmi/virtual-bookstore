@@ -1,0 +1,15 @@
+package com.miniproject.book_store.Repository;
+
+import com.miniproject.book_store.Entity.Cart;
+import com.miniproject.book_store.Entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import java.util.Optional;
+
+public interface CartRepository extends JpaRepository<Cart,Integer> {
+//    Optional<Cart> findByUser_Id(User user_id);
+    @Query("SELECT c FROM Cart c WHERE c.user_id = :user")
+    Optional<Cart> findByUser_Id(@Param("user") User user);
+}
