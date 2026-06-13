@@ -102,10 +102,3 @@ bookstore-tests/target/surefire-reports/index.html
 
 ---
 
-## 📄 Detailed Documentation
-
-| Module | README |
-|--------|--------|
-| Backend | [book_store/README.md](./book_store/README.md) |
-| Frontend | [bookstore-frontend/README.md](./bookstore-frontend/README.md) |
-| Testing | [bookstore-tests/README.md](./bookstore-tests/README.md) |
